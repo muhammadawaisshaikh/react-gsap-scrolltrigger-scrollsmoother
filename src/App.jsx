@@ -2,6 +2,7 @@ import './App.css'
 import { Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/homepage'
 import Samples from './pages/samples'
+import ScrollSmoother from './pages/scroll-smoother';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <ul className='d-flex list-unstyled'>
             <li className='ps-4'><Link to="/">Home</Link></li>
             <li className='ps-4'><Link to="/samples">Samples</Link></li>
+            <li className='ps-4'><Link to="/scroll-smoother">ScrollSmoother</Link></li>
           </ul>
         </nav>
       </div>
@@ -20,6 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/samples" element={<Samples />} />
+        <Route path="/smooth-scroll" element={<Samples />} />
+        <Route path="/scroll-smoother" element={<ScrollSmoother />} />
       </Routes>
     </div>
   )
