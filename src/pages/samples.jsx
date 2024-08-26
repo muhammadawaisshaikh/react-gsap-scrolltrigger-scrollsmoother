@@ -1,8 +1,12 @@
 import RotateBox from "../components/RotateBox";
+import StaggerBoxes from "../components/StaggerBoxes";
 
 const Samples = () => {
     return (
-        <RotateBox />
+        <>
+            <RotateBox />
+            <StaggerBoxes />
+        </>
     );
 }
 

@@ -5,7 +5,7 @@ import Samples from './pages/samples'
 
 function App() {
   return (
-    <>
+    <div className='container'>
       <div className='d-flex justify-content-between align-items-center'>
         <h1>React + GSAP</h1>
 
@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/samples" element={<Samples />} />
       </Routes>
-    </>
+    </div>
   )
 }
 
