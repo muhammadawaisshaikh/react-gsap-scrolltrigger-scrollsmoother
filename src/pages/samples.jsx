@@ -1,4 +1,5 @@
 import RotateBox from "../components/RotateBox";
+import ScrollAnimation from "../components/ScrollAnimation";
 import StaggerBoxes from "../components/StaggerBoxes";
 
 const Samples = () => {
@@ -6,6 +7,7 @@ const Samples = () => {
         <>
             <RotateBox />
             <StaggerBoxes />
+            <ScrollAnimation />
         </>
     );
 }
